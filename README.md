@@ -2,7 +2,7 @@
 
 > Projeto descolado <3
 
-## Stack
+## Stack Project
 
 - Task Runner [Gulp](https://gulpjs.com)
 - HTMl Template Engine [PUG](https://github.com/pugjs/pug)
