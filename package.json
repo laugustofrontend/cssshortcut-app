@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lucasaugustofrontend/cssshortcut-app#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.6.0",
     "pug": "^2.0.0-rc.3"
