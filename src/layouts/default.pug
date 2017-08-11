@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    //- Metas
+    //- =================================
+    include ../include/metadados.pug
+    title Projeto descolado
+
+    //- Fonts
+    //- =================================
+    link(href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet")
+
+    //- Styles
+    //- =================================
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylsheet")
+    link(href="assets/styles/styles.css" rel="stylesheet")
+
+  body
+    include ../partials/header.pug
+
+    main
+        block content
+
+    include ../partials/footer.pug
+
+    script(src="assets/scripts/scripts.js" async)
