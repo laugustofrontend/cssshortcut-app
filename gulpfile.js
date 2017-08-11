@@ -11,7 +11,7 @@ gulp.task('connect', () => {
 })
 
 gulp.task('pug', () => {
-  gulp.src('./src/**/*.pug')
+  gulp.src('./src/*.pug')
     .pipe(pug())
     .pipe(gulp.dest('./out'))
     .pipe(connect.reload())
@@ -25,7 +25,11 @@ gulp.task('stylus', () => {
 })
 
 gulp.task('watch', () => {
-  gulp.watch(['./src/**/*.pug'], ['pug'])
+  gulp.watch([
+      './src/*.pug',
+      './src/include/*.pug',
+      './src/layouts/*.pug',
+      './src/partials/*.pug'], ['pug'])
   gulp.watch(['./src/assets/styles/*.styl'], ['stylus'])
 })
 
