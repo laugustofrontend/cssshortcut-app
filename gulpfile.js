@@ -1,5 +1,4 @@
 const gulp = require('gulp')
-const bs = require('browser-sync').create()
 const connect = require('gulp-connect')
 const pug = require('gulp-pug')
 const stylus = require('gulp-stylus')
