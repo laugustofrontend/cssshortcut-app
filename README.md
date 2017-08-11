@@ -2,6 +2,37 @@
 
 > Projeto descolado <3
 
+## Stack
+
+- Task Runner [Gulp](https://gulpjs.com)
+- HTMl Template Engine [PUG](https://github.com/pugjs/pug)
+- CSS Preprocessor [Stylus](http://stylus-lang.com/)
+
+## Folders Structure
+
+    .
+    |__ README.md
+    |__ LICENSE.md
+    |__ CONTRIBUTING.md
+    |__ out/
+    |__ src/
+    |   |__ assets/
+    |   |   |__ img/
+    |   |   |__ srcripts/
+    |   |   |   |__ scripts.js
+    |   |   |__ styles/
+    |   |   |   |__ style.styl
+    |   |__ partials/
+    |   |   |__ footer.pug
+    |   |   |__ header.pug
+    |   |__ layouts/
+    |   |   |__ default.pug
+    |   |__ index.pug
+    |__ gulpfile.js
+    |__ package.json
+    |__ .editorconfig
+    |__ .gitignore
+
 ## Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
