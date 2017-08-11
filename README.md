@@ -33,6 +33,26 @@
     |__ .editorconfig
     |__ .gitignore
 
+## Run the project locally
+**1 -** Prepare the enviroment
+```sh
+$ yarn dev --dev gulp-cli
+```
+**2 -** Clone the project and install the dependencies:
+```sh
+$ git clone https://github.com/lucasaugustofrontend/cssshortcut-app.git
+$ cd cssshortcut-app
+$ yarn
+```
+**3 -** Run static server and livereload
+```sh
+$ gulp server
+```
+
+## Automatic Tasks
+ - `$ gulp build`: Compile, concat and minify all files.
+ - `$ gulp server`: Watch the files and build and start a static server.
+
 ## Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
