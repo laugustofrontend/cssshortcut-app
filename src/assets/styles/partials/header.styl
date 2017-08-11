@@ -1,0 +1,56 @@
+/*
+    header
+*/
+.header {
+    width: 100%;
+    background: hightligth-color;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 400px) {
+    .menu {
+        width: 100%;
+        justify-content: center;
+        order: 2;
+        padding: 15px  0;
+    }
+}
+.menu-itens {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.menu-item {
+    display: inline-block;
+    list-style: none;
+}
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.profile {
+    margin-left: auto;
+}
+@media screen and (max-width: 400px) {
+    .profile {
+        width: 100%;
+        text-align: center;
+        order: 1;
+        padding: 15px 0;
+    }
+}
+.profile-img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 5px;
+}
+.profile-text {
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+}
