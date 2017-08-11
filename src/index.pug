@@ -1,2 +1,22 @@
-html
-    body index
+doctype html
+html(lang="en")
+  head
+    //- Metas
+    //- =================================
+    include include/metadados.pug
+    title Projeto descolado
+
+    //- Fonts
+    //- =================================
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Roboto")
+
+    //- Styles
+    //- =================================
+    link(rel="stylsheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+    link(rel="stylesheet" href="assets/styles/styles.css")
+  body
+    header header
+    main main
+    footer footer
+
+    script(src="assets/scripts/scripts.js" async)
