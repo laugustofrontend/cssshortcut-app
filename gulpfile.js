@@ -32,4 +32,4 @@ gulp.task('watch', () => {
 gulp.task('build', ['pug', 'stylus'])
 gulp.task('server', ['connect', 'watch'])
 
-gulp.task('default', () => {})
+gulp.task('default', ['server'] ,() => {})
