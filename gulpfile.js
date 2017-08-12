@@ -14,27 +14,27 @@ gulp.task('connect', () => {
 
 gulp.task('pug', () => {
   gulp.src('./src/*.pug')
-    .pipe(data(() => {
-        return require('./projects.json')
-    }))
-    .pipe(pug())
-    .pipe(gulp.dest('./out'))
-    .pipe(connect.reload())
+    .pipe(data( () => require('./projects.json') ))
+    .pipe( pug() )
+    .pipe( gulp.dest('./out') )
+    .pipe( connect.reload() )
 })
 gulp.task('stylus', () => {
   gulp.src('./src/assets/styles/*.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('./out/assets/styles'))
-    .pipe(connect.reload())
+    .pipe( stylus({
+      compress: true
+    }) )
+    .pipe( gulp.dest('./out/assets/styles') )
+    .pipe( connect.reload() )
 })
 gulp.task('imagemin', () => {
     gulp.src('./src/assets/imgs/**/*')
-        .pipe(imagemin([
+        .pipe( imagemin([
             imagemin.jpegtran({progressive: true}),
             imagemin.optipng({optimizationLevel: 7}),
             imagemin.svgo({plugin: [{removeViewBox: true}]})
-        ]))
-        .pipe(gulp.dest('./out/assets/imgs'))
+        ]) )
+        .pipe( gulp.dest('./out/assets/imgs') )
 })
 
 gulp.task('watch', () => {
@@ -53,4 +53,4 @@ gulp.task('watch', () => {
 gulp.task('build', ['pug', 'stylus', 'imagemin'])
 gulp.task('server', ['connect', 'watch'])
 
-gulp.task('default', ['server'] ,() => {})
+gulp.task('default', ['server'], () => {})
