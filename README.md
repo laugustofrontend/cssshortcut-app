@@ -4,9 +4,9 @@
 
 ## Stack Project
 
-- Task Runner [Gulp](https://gulpjs.com)
-- HTMl Template Engine [PUG](https://github.com/pugjs/pug)
-- CSS Preprocessor [Stylus](http://stylus-lang.com/)
+- Task Runner [Gulp](https://gulpjs.com "GulpJS")
+- HTMl Template Engine [PUG](https://github.com/pugjs/pug "Template Engine Pug")
+- CSS Preprocessor [Stylus](http://stylus-lang.com/ "Stylus")
 
 ## Folders Structure
 
@@ -17,19 +17,23 @@
     |__ out/
     |__ src/
     |   |__ assets/
+    |   |   |__ icons/
     |   |   |__ img/
     |   |   |__ srcripts/
     |   |   |   |__ scripts.js
     |   |   |__ styles/
+    |   |   |   |__ modules/
     |   |   |   |__ style.styl
     |   |__ partials/
     |   |   |__ footer.pug
     |   |   |__ header.pug
     |   |__ layouts/
     |   |   |__ default.pug
+    |   |__ projects.pug
     |   |__ index.pug
     |__ gulpfile.js
     |__ package.json
+    |__ projects.json
     |__ .editorconfig
     |__ .gitignore
 
