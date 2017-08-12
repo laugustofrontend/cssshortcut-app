@@ -4,6 +4,7 @@ const pug = require('gulp-pug')
 const stylus = require('gulp-stylus')
 const imagemin = require('gulp-imagemin')
 const data = require('gulp-data')
+const lint = require('gulp-eslint')
 
 gulp.task('connect', () => {
     connect.server({
@@ -36,6 +37,13 @@ gulp.task('imagemin', () => {
         ]) )
         .pipe( gulp.dest('./out/assets/imgs') )
 })
+gulp.task('lint', () => {
+  gulp.src('./src/assets/scripts/**/*.js')
+    .pipe(lint())
+    .pipe(lint.format())
+    .pipe(lint.failAfterError())
+    .pipe(connect.reload())
+})
 
 gulp.task('watch', () => {
   gulp.watch([
@@ -48,9 +56,10 @@ gulp.task('watch', () => {
       './src/assets/styles/modules/*.styl'
     ], ['stylus'])
     gulp.watch(['./src/icons/*.html'], [connect.reload()])
+    gulp.watch(['gulpfile.js','./src/assets/scripts/*.js'], ['lint'])
 })
 
-gulp.task('build', ['pug', 'stylus', 'imagemin'])
+gulp.task('build', ['pug', 'stylus', 'imagemin', 'lint'])
 gulp.task('server', ['connect', 'watch'])
 
 gulp.task('default', ['server'], () => {})
