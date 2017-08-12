@@ -9,7 +9,7 @@ const stylint = require('gulp-stylint')
 
 gulp.task('connect', () => {
     connect.server({
-        root: './out',
+        root: './docs',
         livereload: true
     })
 })
@@ -18,7 +18,7 @@ gulp.task('pug', () => {
   gulp.src('./src/*.pug')
     .pipe(data( () => require('./projects.json') ))
     .pipe( pug() )
-    .pipe( gulp.dest('./out') )
+    .pipe( gulp.dest('./docs') )
     .pipe( connect.reload() )
 })
 gulp.task('stylus', () => {
@@ -26,7 +26,7 @@ gulp.task('stylus', () => {
     .pipe( stylus({
       compress: true
     }) )
-    .pipe( gulp.dest('./out/assets/styles') )
+    .pipe( gulp.dest('./docs/assets/styles') )
     .pipe( connect.reload() )
 })
 gulp.task('imagemin', () => {
@@ -36,7 +36,7 @@ gulp.task('imagemin', () => {
             imagemin.optipng({optimizationLevel: 7}),
             imagemin.svgo({plugin: [{removeViewBox: true}]})
         ]) )
-        .pipe( gulp.dest('./out/assets/imgs') )
+        .pipe( gulp.dest('./docs/assets/imgs') )
 })
 gulp.task('lint', () => {
   gulp.src('./src/assets/scripts/**/*.js')
