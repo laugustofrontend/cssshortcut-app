@@ -28,8 +28,6 @@
             "error",
             "never"
         ],
-        "camelcase": 1,
-        "no-extra-parens": "all",
-        "no-template-curly-in-string": "error"
+        "camelcase": 1
     }
 }
