@@ -1,1 +1,3 @@
-console.log('Hello World!!')
+const hello = text => text
+
+hello('Hello World')
