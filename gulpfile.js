@@ -5,6 +5,7 @@ const stylus = require('gulp-stylus')
 const imagemin = require('gulp-imagemin')
 const data = require('gulp-data')
 const lint = require('gulp-eslint')
+const stylint = require('gulp-stylint')
 
 gulp.task('connect', () => {
     connect.server({
@@ -44,6 +45,11 @@ gulp.task('lint', () => {
     .pipe(lint.failAfterError())
     .pipe(connect.reload())
 })
+gulp.task('stylint', () => {
+  gulp.src('./src/assets/styles/**/*.styl')
+    .pipe(stylint({config: '.stylintrc'}))
+    .pipe(stylint.reporter())
+})
 
 gulp.task('watch', () => {
   gulp.watch([
@@ -57,9 +63,12 @@ gulp.task('watch', () => {
     ], ['stylus'])
     gulp.watch(['./src/icons/*.html'], [connect.reload()])
     gulp.watch(['gulpfile.js','./src/assets/scripts/*.js'], ['lint'])
+    gulp.watch([
+      './src/assets/styles/*.styl',
+      './src/assets/styles/modules/*.styl'], ['stylint'])
 })
 
-gulp.task('build', ['pug', 'stylus', 'imagemin', 'lint'])
+gulp.task('build', ['pug', 'stylus', 'imagemin', 'lint', 'stylint'])
 gulp.task('server', ['connect', 'watch'])
 
 gulp.task('default', ['server'], () => {})
