@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/lucasaugustofrontend/cssshortcut-app.svg?branch=master)](https://travis-ci.org/lucasaugustofrontend/cssshortcut-app)
+[![dependencies Status](https://david-dm.org/lucasaugustofrontend/cssshortcut-app/status.svg)](https://david-dm.org/lucasaugustofrontend/cssshortcut-app)
+[![devDependencies Status](https://david-dm.org/lucasaugustofrontend/cssshortcut-app/dev-status.svg)](https://david-dm.org/lucasaugustofrontend/cssshortcut-app?type=dev)
 
 # CSShortcurt APP
 
