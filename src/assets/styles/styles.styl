@@ -1,70 +1,8 @@
-// Colors
-hightligth-color = #ff0066
-secondary-color = #212121
-bg-color = #333
-
-// DEV MODE
-border()
-    border: 1px dashed black
-
-
-// GENERAL
-html, body {
-    height: 100%;
-}
-body {
-    background: bg-color;
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    flex-direction: column;
-}
-
-.main {
-    flex: 1;
-}
-.container-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile {
-    border()
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-}
-.profile_profile-img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 200px;
-}
-.profile_profile-author {
-    color: white;
-    font-family: 'Lobster', sans-serif;
-    font-size: 60px;
-    font-weight: 300;
-    margin: 5px 0;
-}
-.profile_profile-description {
-    color: white;
-}
-
-// Box model
-* {
-    box-sizing: border-box;
-}
-
-.container {
-    border()
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-// PARTIALS
-@import 'partials/header.styl'
-@import 'partials/footer.styl'
+@import 'modules/theme.styl'
+@import 'modules/global.styl'
+@import 'modules/profile.styl'
+@import 'modules/projects.styl'
+@import 'modules/texts.styl'
+@import 'modules/container.styl'
+@import 'modules/header.styl'
+@import 'modules/footer.styl'
