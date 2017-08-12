@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lucasaugustofrontend/cssshortcut-app.svg?branch=master)](https://travis-ci.org/lucasaugustofrontend/cssshortcut-app)
+
 # CSShortcurt APP
 
 > Projeto descolado <3
