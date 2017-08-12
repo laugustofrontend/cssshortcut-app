@@ -40,8 +40,8 @@ gulp.task('watch', () => {
       './src/layouts/*.pug',
       './src/partials/*.pug'], ['pug'])
   gulp.watch([
-      './src/assets/styles/**/*.styl',
-      './src/assets/styles/partials/*.styl'
+      './src/assets/styles/*.styl',
+      './src/assets/styles/modules/*.styl'
     ], ['stylus'])
     gulp.watch(['./src/icons/*.html'], [connect.reload()])
 })
