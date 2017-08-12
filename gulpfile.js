@@ -39,7 +39,11 @@ gulp.task('watch', () => {
       './src/include/*.pug',
       './src/layouts/*.pug',
       './src/partials/*.pug'], ['pug'])
-  gulp.watch(['./src/assets/styles/**/*.styl'], ['stylus'])
+  gulp.watch([
+      './src/assets/styles/**/*.styl',
+      './src/assets/styles/partials/*.styl'
+    ], ['stylus'])
+    gulp.watch(['./src/icons/*.html'], [connect.reload()])
 })
 
 gulp.task('build', ['pug', 'stylus', 'imagemin'])
