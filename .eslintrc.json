@@ -8,9 +8,13 @@
         "sourceType": "module"
     },
     "rules": {
+        "allow": [
+          "warn",
+          "error"
+        ],
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",
@@ -24,6 +28,8 @@
             "error",
             "never"
         ],
-        "camelcase": 1
+        "camelcase": 1,
+        "no-extra-parens": "all",
+        "no-template-curly-in-string": "error"
     }
 }
