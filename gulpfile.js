@@ -3,6 +3,7 @@ const connect = require('gulp-connect')
 const pug = require('gulp-pug')
 const stylus = require('gulp-stylus')
 const imagemin = require('gulp-imagemin')
+const data = require('gulp-data')
 
 gulp.task('connect', () => {
     connect.server({
@@ -13,6 +14,9 @@ gulp.task('connect', () => {
 
 gulp.task('pug', () => {
   gulp.src('./src/*.pug')
+    .pipe(data(() => {
+        return require('./projects.json')
+    }))
     .pipe(pug())
     .pipe(gulp.dest('./out'))
     .pipe(connect.reload())
