@@ -69,12 +69,13 @@ gulp.task('watch', () => {
     './src/assets/styles/modules/*.styl'], ['stylint'])
 })
 
-gulp.task('deploy', () => {
+gulp.task('ghpages', () => {
   gulp.src('./docs/**/*')
     .pipe(ghPages())
 })
 
 gulp.task('build', ['pug', 'stylus', 'imagemin', 'lint', 'stylint'])
 gulp.task('server', ['connect', 'watch'])
+gulp.task('deploy', ['build', 'ghpages'])
 
 gulp.task('default', ['server'], () => {})
