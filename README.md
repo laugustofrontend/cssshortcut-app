@@ -60,6 +60,7 @@ $ gulp server
 ## Automatic Tasks
  - `$ gulp build`: Compile, concat and minify all files.
  - `$ gulp server`: Watch the files and build and start a static server.
+ - `$ gulp deploy`: Deploy for gh-pages
 
 ## Versioning
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
