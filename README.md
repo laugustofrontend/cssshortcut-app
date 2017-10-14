@@ -62,7 +62,6 @@ $ gulp server
  - `$ gulp server`: Watch the files and build and start a static server.
 
 ## Versioning
-
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
 
 ## Contributing
@@ -71,4 +70,4 @@ Find on our [roadmap](https://github.com/csshortcut/csshortcut-app/issues/1) the
 Want to contribute? [Follow these recommendations](https://github.com/csshortcut/csshortcut-app/blob/master/CONTRIBUTING.md).
 
 ## License
-[MIT License](https://github.com/csshortcut/csshortcut-app/blob/master/LICENSE.md) © [Lucas Augusto](http://lucasaugustodesigner.com.br/)
+[MIT License](https://github.com/lucasaugustofrontend/cssshortcut-app/blob/master/LICENSE.md) © [Lucas Augusto](http://lucasaugustodesigner.com.br/)
