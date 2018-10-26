@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasaugustofrontend/cssshortcut-app.git"
+    "url": "git+https://github.com/laugustofrontend/cssshortcut-app.git"
   },
   "author": "Lucas Augusto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lucasaugustofrontend/cssshortcut-app/issues"
+    "url": "https://github.com/laugustofrontend/cssshortcut-app/issues"
   },
-  "homepage": "https://github.com/lucasaugustofrontend/cssshortcut-app#readme",
+  "homepage": "https://github.com/laugustofrontend/cssshortcut-app#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
